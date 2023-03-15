@@ -21,7 +21,7 @@ d-sgov-popis-zmen:glosář a a-popis-dat-pojem:glosář, owl:Ontology, skos:Conc
     d-sgov-popis-zmen-pojem:schváleno, d-sgov-popis-zmen-pojem:zamítnuto, d-sgov-popis-zmen-pojem:má-gestora,
     d-sgov-popis-zmen-pojem:je-gestorem, d-sgov-popis-zmen-pojem:požadavek-na-gestorování,
     d-sgov-popis-zmen-pojem:žádá-o-gestorování, d-sgov-popis-zmen-pojem:má-požadavek-na-gestorování,
-    d-sgov-popis-zmen-pojem:má-žadatele .
+    d-sgov-popis-zmen-pojem:má-žadatele, d-sgov-popis-zmen-pojem:notifikace .
 
 d-sgov-popis-zmen-pojem:změna a rdf:Statement, skos:Concept;
   skos:inScheme d-sgov-popis-zmen:glosář;
@@ -65,6 +65,11 @@ d-sgov-popis-zmen-pojem:vráceno-zpět a skos:Concept;
 d-sgov-popis-zmen-pojem:požadavek-na-gestorování a skos:Concept;
   skos:inScheme d-sgov-popis-zmen:glosář;
   skos:prefLabel "Požadavek na gestorování"@cs, "Gestoring Request"@en;
+  skos:scopeNote ""@cs .
+
+d-sgov-popis-zmen-pojem:notifikace a skos:Concept;
+  skos:inScheme d-sgov-popis-zmen:glosář;
+  skos:prefLabel "Notifikace"@cs, "Notification"@en;
   skos:scopeNote ""@cs .
 
 d-sgov-popis-zmen-pojem:je-typu a skos:Concept;
