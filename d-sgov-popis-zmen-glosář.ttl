@@ -53,7 +53,7 @@ d-sgov-popis-zmen-pojem:odstraněno a skos:Concept;
 d-sgov-popis-zmen-pojem:upraveno a skos:Concept;
   skos:broader d-sgov-popis-zmen-pojem:typ;
   skos:inScheme d-sgov-popis-zmen:glosář;
-  skos:prefLabel "Upraveno"@cs, "Changed"@en;
+  skos:prefLabel "Upraveno"@cs, "Modified"@en;
   skos:scopeNote ""@cs .
 
 d-sgov-popis-zmen-pojem:vráceno-zpět a skos:Concept;
