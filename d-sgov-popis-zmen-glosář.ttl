@@ -19,7 +19,9 @@ d-sgov-popis-zmen:glosář a a-popis-dat-pojem:glosář, owl:Ontology, skos:Conc
     d-sgov-popis-zmen-pojem:publikační-kontext, d-sgov-popis-zmen-pojem:typ, d-sgov-popis-zmen-pojem:v-kontextu,
     d-sgov-popis-zmen-pojem:z-projektu, d-sgov-popis-zmen-pojem:změna, d-sgov-popis-zmen-pojem:má-nový-objekt,
     d-sgov-popis-zmen-pojem:schváleno, d-sgov-popis-zmen-pojem:zamítnuto, d-sgov-popis-zmen-pojem:má-gestora,
-    d-sgov-popis-zmen-pojem:je-gestorem .
+    d-sgov-popis-zmen-pojem:je-gestorem, d-sgov-popis-zmen-pojem:požadavek-na-gestorování,
+    d-sgov-popis-zmen-pojem:žádá-o-gestorování, d-sgov-popis-zmen-pojem:má-požadavek-na-gestorování,
+    d-sgov-popis-zmen-pojem:má-žadatele, d-sgov-popis-zmen-pojem:notifikace .
 
 d-sgov-popis-zmen-pojem:změna a rdf:Statement, skos:Concept;
   skos:inScheme d-sgov-popis-zmen:glosář;
@@ -51,13 +53,23 @@ d-sgov-popis-zmen-pojem:odstraněno a skos:Concept;
 d-sgov-popis-zmen-pojem:upraveno a skos:Concept;
   skos:broader d-sgov-popis-zmen-pojem:typ;
   skos:inScheme d-sgov-popis-zmen:glosář;
-  skos:prefLabel "Upraveno"@cs, "Changed"@en;
+  skos:prefLabel "Upraveno"@cs, "Modified"@en;
   skos:scopeNote ""@cs .
 
 d-sgov-popis-zmen-pojem:vráceno-zpět a skos:Concept;
   skos:broader d-sgov-popis-zmen-pojem:typ;
   skos:inScheme d-sgov-popis-zmen:glosář;
   skos:prefLabel "Vráceno zpět"@cs, "Rollbacked"@en;
+  skos:scopeNote ""@cs .
+
+d-sgov-popis-zmen-pojem:požadavek-na-gestorování a skos:Concept;
+  skos:inScheme d-sgov-popis-zmen:glosář;
+  skos:prefLabel "Požadavek na gestorování"@cs, "Gestoring Request"@en;
+  skos:scopeNote ""@cs .
+
+d-sgov-popis-zmen-pojem:notifikace a skos:Concept;
+  skos:inScheme d-sgov-popis-zmen:glosář;
+  skos:prefLabel "Notifikace"@cs, "Notification"@en;
   skos:scopeNote ""@cs .
 
 d-sgov-popis-zmen-pojem:je-typu a skos:Concept;
@@ -96,4 +108,18 @@ d-sgov-popis-zmen-pojem:má-gestora a skos:Concept;
 d-sgov-popis-zmen-pojem:je-gestorem a skos:Concept;
   skos:inScheme d-sgov-popis-zmen:glosář;
   skos:prefLabel "je gestorem"@cs, "gestor of"@en ;
-    owl:inverseOf d-sgov-popis-zmen-pojem:má-gestora .
+  owl:inverseOf d-sgov-popis-zmen-pojem:má-gestora .
+
+d-sgov-popis-zmen-pojem:žádá-o-gestorování a skos:Concept;
+  skos:inScheme d-sgov-popis-zmen:glosář;
+  skos:prefLabel "žádá o gestorování"@cs, "requests gestoring of"@en ;
+  owl:inverseOf d-sgov-popis-zmen-pojem:má-požadavek-na-gestorování .
+
+d-sgov-popis-zmen-pojem:má-požadavek-na-gestorování a skos:Concept;
+  skos:inScheme d-sgov-popis-zmen:glosář;
+  skos:prefLabel "má požadavek na gestorování"@cs, "has gestoring request"@en ;
+  owl:inverseOf d-sgov-popis-zmen-pojem:žádá-o-gestorování .
+
+d-sgov-popis-zmen-pojem:má-žadatele a skos:Concept;
+  skos:inScheme d-sgov-popis-zmen:glosář;
+  skos:prefLabel "má žadatele"@cs, "has applicant"@en .
