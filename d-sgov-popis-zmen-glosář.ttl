@@ -21,7 +21,7 @@ d-sgov-popis-zmen:glosář a a-popis-dat-pojem:glosář, owl:Ontology, skos:Conc
     d-sgov-popis-zmen-pojem:schváleno, d-sgov-popis-zmen-pojem:zamítnuto, d-sgov-popis-zmen-pojem:má-gestora,
     d-sgov-popis-zmen-pojem:je-gestorem, d-sgov-popis-zmen-pojem:požadavek-na-gestorování,
     d-sgov-popis-zmen-pojem:žádá-o-gestorování, d-sgov-popis-zmen-pojem:má-požadavek-na-gestorování,
-    d-sgov-popis-zmen-pojem:má-žadatele, d-sgov-popis-zmen-pojem:notifikace .
+    d-sgov-popis-zmen-pojem:má-žadatele, d-sgov-popis-zmen-pojem:notifikace, d-sgov-popis-zmen-pojem:má-popis-typu-subjektu .
 
 d-sgov-popis-zmen-pojem:změna a rdf:Statement, skos:Concept;
   skos:inScheme d-sgov-popis-zmen:glosář;
@@ -44,16 +44,16 @@ d-sgov-popis-zmen-pojem:vytvořeno a skos:Concept;
   skos:prefLabel "Vytvořeno"@cs, "Created"@en;
   skos:scopeNote ""@cs .
 
-d-sgov-popis-zmen-pojem:odstraněno a skos:Concept;
-  skos:broader d-sgov-popis-zmen-pojem:typ;
-  skos:inScheme d-sgov-popis-zmen:glosář;
-  skos:prefLabel "Odstraněno"@cs, "Removed"@en;
-  skos:scopeNote ""@cs .
-
 d-sgov-popis-zmen-pojem:upraveno a skos:Concept;
   skos:broader d-sgov-popis-zmen-pojem:typ;
   skos:inScheme d-sgov-popis-zmen:glosář;
   skos:prefLabel "Upraveno"@cs, "Modified"@en;
+  skos:scopeNote ""@cs .
+
+d-sgov-popis-zmen-pojem:odstraněno a skos:Concept;
+  skos:broader d-sgov-popis-zmen-pojem:typ;
+  skos:inScheme d-sgov-popis-zmen:glosář;
+  skos:prefLabel "Odstraněno"@cs, "Removed"@en;
   skos:scopeNote ""@cs .
 
 d-sgov-popis-zmen-pojem:vráceno-zpět a skos:Concept;
@@ -123,3 +123,7 @@ d-sgov-popis-zmen-pojem:má-požadavek-na-gestorování a skos:Concept;
 d-sgov-popis-zmen-pojem:má-žadatele a skos:Concept;
   skos:inScheme d-sgov-popis-zmen:glosář;
   skos:prefLabel "má žadatele"@cs, "has applicant"@en .
+
+d-sgov-popis-zmen-pojem:má-popis-typu-subjektu a skos:Concept;
+  skos:inScheme d-sgov-popis-zmen:glosář;
+  skos:prefLabel "má popis typu subjektu"@cs, "has type description of subjekt"@en .
