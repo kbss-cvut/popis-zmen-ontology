@@ -397,12 +397,6 @@ d-sgov-popis-zmen-pojem:objekt-změny a <http://onto.fel.cvut.cz/ontologies/ufo/
           owl:inverseOf <https://slovník.gov.cz/základní/pojem/má-vztažený-prvek-2>
         ]
     ], [ a owl:Restriction;
-      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger;
-      owl:onClass d-sgov-popis-zmen-pojem:má-nový-objekt;
-      owl:onProperty [
-          owl:inverseOf <https://slovník.gov.cz/základní/pojem/má-vztažený-prvek-2>
-        ]
-    ], [ a owl:Restriction;
       owl:allValuesFrom d-sgov-popis-zmen-pojem:má-hodnotu;
       owl:onProperty [
           owl:inverseOf <https://slovník.gov.cz/základní/pojem/má-vztažený-prvek-1>
@@ -613,17 +607,17 @@ d-sgov-popis-zmen-pojem:má-nový-objekt a <https://slovník.gov.cz/základní/p
       owl:onClass d-sgov-popis-zmen-pojem:změna;
       owl:onProperty <https://slovník.gov.cz/základní/pojem/má-vztažený-prvek-1>
     ], [ a owl:Restriction;
+      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+      owl:onClass d-sgov-popis-zmen-pojem:změna;
+      owl:onProperty <https://slovník.gov.cz/základní/pojem/má-vztažený-prvek-1>
+    , [ a owl:Restriction;
       owl:allValuesFrom d-sgov-popis-zmen-pojem:objekt-změny;
       owl:onProperty <https://slovník.gov.cz/základní/pojem/má-vztažený-prvek-2>
     ], [ a owl:Restriction;
       owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger;
       owl:onClass d-sgov-popis-zmen-pojem:objekt-změny;
       owl:onProperty <https://slovník.gov.cz/základní/pojem/má-vztažený-prvek-2>
-    ], [ a owl:Restriction;
-      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger;
-      owl:onClass d-sgov-popis-zmen-pojem:objekt-změny;
-      owl:onProperty <https://slovník.gov.cz/základní/pojem/má-vztažený-prvek-2>
-    ] .
+    ]] .
 
 d-sgov-popis-zmen-pojem:má-hodnotu a <https://slovník.gov.cz/základní/pojem/typ-vztahu>;
   rdfs:subClassOf [ a owl:Restriction;
