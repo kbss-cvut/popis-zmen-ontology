@@ -21,7 +21,9 @@ d-sgov-popis-zmen:glosář a a-popis-dat-pojem:glosář, owl:Ontology, skos:Conc
     d-sgov-popis-zmen-pojem:schváleno, d-sgov-popis-zmen-pojem:zamítnuto, d-sgov-popis-zmen-pojem:má-gestora,
     d-sgov-popis-zmen-pojem:je-gestorem, d-sgov-popis-zmen-pojem:požadavek-na-gestorování,
     d-sgov-popis-zmen-pojem:žádá-o-gestorování, d-sgov-popis-zmen-pojem:má-požadavek-na-gestorování,
-    d-sgov-popis-zmen-pojem:má-žadatele, d-sgov-popis-zmen-pojem:notifikace, d-sgov-popis-zmen-pojem:má-popis-typu-subjektu .
+    d-sgov-popis-zmen-pojem:má-žadatele, d-sgov-popis-zmen-pojem:notifikace, d-sgov-popis-zmen-pojem:má-popis-typu-subjektu,
+    d-sgov-popis-zmen-pojem:objekt-změny, d-sgov-popis-zmen-pojem:má-hodnotu, d-sgov-popis-zmen-pojem:má-typ-hodnoty,
+    d-sgov-popis-zmen-pojem:má-štítek .
 
 d-sgov-popis-zmen-pojem:změna a rdf:Statement, skos:Concept;
   skos:inScheme d-sgov-popis-zmen:glosář;
@@ -70,6 +72,11 @@ d-sgov-popis-zmen-pojem:požadavek-na-gestorování a skos:Concept;
 d-sgov-popis-zmen-pojem:notifikace a skos:Concept;
   skos:inScheme d-sgov-popis-zmen:glosář;
   skos:prefLabel "Notifikace"@cs, "Notification"@en;
+  skos:scopeNote ""@cs .
+
+d-sgov-popis-zmen-pojem:objekt-změny a skos:Concept;
+  skos:inScheme d-sgov-popis-zmen:glosář;
+  skos:prefLabel "Objekt změny"@cs, "Change object"@en;
   skos:scopeNote ""@cs .
 
 d-sgov-popis-zmen-pojem:je-typu a skos:Concept;
@@ -127,3 +134,15 @@ d-sgov-popis-zmen-pojem:má-žadatele a skos:Concept;
 d-sgov-popis-zmen-pojem:má-popis-typu-subjektu a skos:Concept;
   skos:inScheme d-sgov-popis-zmen:glosář;
   skos:prefLabel "má popis typu subjektu"@cs, "has type description of subjekt"@en .
+
+d-sgov-popis-zmen-pojem:má-hodnotu a skos:Concept;
+  skos:inScheme d-sgov-popis-zmen:glosář;
+  skos:prefLabel "má hodnotu"@cs, "has value"@en .
+
+d-sgov-popis-zmen-pojem:má-typ-hodnoty a skos:Concept;
+  skos:inScheme d-sgov-popis-zmen:glosář;
+  skos:prefLabel "má typ hodnoty"@cs, "has value type"@en .
+
+d-sgov-popis-zmen-pojem:má-štítek a skos:Concept;
+  skos:inScheme d-sgov-popis-zmen:glosář;
+  skos:prefLabel "má štítek"@cs, "has tag"@en .
