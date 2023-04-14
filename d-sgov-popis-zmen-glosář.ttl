@@ -23,14 +23,19 @@ d-sgov-popis-zmen:glosář a a-popis-dat-pojem:glosář, owl:Ontology, skos:Conc
     d-sgov-popis-zmen-pojem:žádá-o-gestorování, d-sgov-popis-zmen-pojem:má-požadavek-na-gestorování,
     d-sgov-popis-zmen-pojem:má-žadatele, d-sgov-popis-zmen-pojem:notifikace, d-sgov-popis-zmen-pojem:má-popis-typu-subjektu,
     d-sgov-popis-zmen-pojem:objekt-změny, d-sgov-popis-zmen-pojem:má-hodnotu, d-sgov-popis-zmen-pojem:má-typ-hodnoty,
-    d-sgov-popis-zmen-pojem:má-štítek .
+    d-sgov-popis-zmen-pojem:má-štítek, d-sgov-popis-zmen-pojem:komentovatelná-entita .
 
-d-sgov-popis-zmen-pojem:změna a rdf:Statement, skos:Concept;
+d-sgov-popis-zmen-pojem:komentovatelná-entita a skos:Concept;
+  skos:inScheme d-sgov-popis-zmen:glosář;
+  skos:prefLabel "Komentovatelní entita"@cs, "Commentable entity"@en;
+  skos:scopeNote ""@cs .
+
+d-sgov-popis-zmen-pojem:změna a rdf:Statement, d-sgov-popis-zmen-pojem:komentovatelná-entita, skos:Concept;
   skos:inScheme d-sgov-popis-zmen:glosář;
   skos:prefLabel "Změna"@cs, "Change"@en;
   skos:scopeNote ""@cs .
 
-d-sgov-popis-zmen-pojem:publikační-kontext a a-popis-dat-pojem:kontext, skos:Concept;
+d-sgov-popis-zmen-pojem:publikační-kontext a a-popis-dat-pojem:kontext, d-sgov-popis-zmen-pojem:komentovatelná-entita, skos:Concept;
   skos:inScheme d-sgov-popis-zmen:glosář;
   skos:prefLabel "Publikační kontext"@cs, "Publication context"@en;
   skos:scopeNote ""@cs .
