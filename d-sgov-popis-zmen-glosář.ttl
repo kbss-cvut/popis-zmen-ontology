@@ -23,7 +23,8 @@ d-sgov-popis-zmen:glosář a a-popis-dat-pojem:glosář, owl:Ontology, skos:Conc
     d-sgov-popis-zmen-pojem:žádá-o-gestorování, d-sgov-popis-zmen-pojem:má-požadavek-na-gestorování,
     d-sgov-popis-zmen-pojem:má-žadatele, d-sgov-popis-zmen-pojem:notifikace, d-sgov-popis-zmen-pojem:má-popis-typu-subjektu,
     d-sgov-popis-zmen-pojem:objekt-změny, d-sgov-popis-zmen-pojem:má-hodnotu, d-sgov-popis-zmen-pojem:má-typ-hodnoty,
-    d-sgov-popis-zmen-pojem:má-štítek, d-sgov-popis-zmen-pojem:komentovatelná-entita .
+    d-sgov-popis-zmen-pojem:má-štítek, d-sgov-popis-zmen-pojem:komentovatelná-entita, 
+    d-sgov-popis-zmen-pojem:je-počitatelná-do-statistiky .
 
 d-sgov-popis-zmen-pojem:komentovatelná-entita a skos:Concept;
   skos:inScheme d-sgov-popis-zmen:glosář;
@@ -151,3 +152,7 @@ d-sgov-popis-zmen-pojem:má-typ-hodnoty a skos:Concept;
 d-sgov-popis-zmen-pojem:má-štítek a skos:Concept;
   skos:inScheme d-sgov-popis-zmen:glosář;
   skos:prefLabel "má štítek"@cs, "has tag"@en .
+
+d-sgov-popis-zmen-pojem:je-počitatelná-do-statistiky a skos:Concept;
+  skos:inScheme d-sgov-popis-zmen:glosář;
+  skos:prefLabel "je počitatelná do statistiky"@cs, "is countable to statistics"@en .
