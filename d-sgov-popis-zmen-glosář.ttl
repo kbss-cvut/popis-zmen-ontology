@@ -24,7 +24,7 @@ d-sgov-popis-zmen:glosář a a-popis-dat-pojem:glosář, owl:Ontology, skos:Conc
     d-sgov-popis-zmen-pojem:má-žadatele, d-sgov-popis-zmen-pojem:notifikace, d-sgov-popis-zmen-pojem:má-popis-typu-subjektu,
     d-sgov-popis-zmen-pojem:objekt-změny, d-sgov-popis-zmen-pojem:má-hodnotu, d-sgov-popis-zmen-pojem:má-typ-hodnoty,
     d-sgov-popis-zmen-pojem:má-štítek, d-sgov-popis-zmen-pojem:komentovatelná-entita, 
-    d-sgov-popis-zmen-pojem:je-počitatelná-do-statistiky .
+    d-sgov-popis-zmen-pojem:je-počitatelná-do-statistiky, d-sgov-popis-zmen-pojem:odpovídající-pull-request .
 
 d-sgov-popis-zmen-pojem:komentovatelná-entita a skos:Concept;
   skos:inScheme d-sgov-popis-zmen:glosář;
@@ -156,3 +156,7 @@ d-sgov-popis-zmen-pojem:má-štítek a skos:Concept;
 d-sgov-popis-zmen-pojem:je-počitatelná-do-statistiky a skos:Concept;
   skos:inScheme d-sgov-popis-zmen:glosář;
   skos:prefLabel "je počitatelná do statistiky"@cs, "is countable to statistics"@en .
+
+d-sgov-popis-zmen-pojem:odpovídající-pull-request a skos:Concept;
+  skos:inScheme d-sgov-popis-zmen:glosář;
+  skos:prefLabel "odpovídající Pull Request v GitHubu"@cs, "corresponding Pull Request in GitHub"@en .
